@@ -88,12 +88,6 @@ main > section{
     width: 100%;
 }
 
-/* responsive media query */
-@media screen and (max-width: 576px) {
-    .navbar, .nav-links {
-        flex-direction: column;
-    }
-}
 
 /* main section */
 /* Team and feature related styles */
@@ -123,4 +117,23 @@ main > section{
 
 #feature-design{
     color: #FF900E;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-links,
+    .teams {
+        flex-direction: column;
+    }
+
+    .team-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .our-features{
+        margin-left: 20px;
+    }
 }
